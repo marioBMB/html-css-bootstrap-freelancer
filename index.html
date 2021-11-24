@@ -6,66 +6,213 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bootstrap Freelancer</title>
        
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">       
         <link rel="stylesheet" href="style.css">
-        <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'>
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-       
-
     </head>
 
     <body>
-          
-        <div class="container">
-            
-            <header>
+        
+        <header class='p-3'>
+            <div class="container px-0">
 
-                <nav class='p-4'>
+                <div class="row align-items-center justify-content-between me-0 w-100">
 
-                    <div class="row align-items-center me-0">
+                    <div class="col-6 main-logo">
+                        <a href='#'><h2>Start Bootstrap</h2></a>
+                    </div>
 
-                        <div class="col">
-                            <a href='#'><h2>Start Bootstrap</h2></a>
-                        </div>
-
-                        <div class="col-auto bars"> <!-- col auto occupa tutto lo spazio possibile -->
+                    <nav class="col-6 d-flex align-items-center justify-content-end pe-0"> <!-- col auto occupa solo lo spazio utile -->
+                        <ul class='d-none d-md-flex'>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <div class="bars d-md-none">
                             <i class="fas fa-bars"></i>
                         </div>
+                    </nav>
+                </div>
+            </div>
+
+        </header>
+
+            <section id="start" class='p-6 bg-light-sea-green'>
+                <div class="container">
+
+                    <div class="row flex-column justify-content-center align-items-center">
+                        
+                        <div class="col text-center">
+                            <img src="img/avatar.svg" alt="">
+                            <h1>Start Bootstrap</h1>
+                            <div class='bar-star'>
+                                <hr><i class="fa fa-star"></i><hr>
+                            </div>
+                            <h4>Graphic Artist - Web Designer - Illustrator</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id='portfolio' class='py-5'>
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col text-center">
+                            <h3>Portfolio</h3>
+                            <div class='bar-star dark'>
+                                <hr><i class="fa fa-star"></i><hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 mt-5">
+                       
+                        <div class="col rounded" id='cabin'>
+                            <img src="img/cabin.png" alt="">
+                        </div>
+                        <div class="col rounded" id='cake'>
+                            <img src="img/cake.png" alt="">
+                        </div>
+                        <div class="col rounded" id='circus'>
+                            <img src="img/circus.png" alt="">
+                        </div>
+                        <div class="col rounded" id='videogame'>
+                            <img src="img/game.png" alt="">
+                        </div>
+                        <div class="col rounded" id='safe'>
+                            <img src="img/safe.png" alt="">
+                        </div>
+                        <div class="col rounded" id=''>
+                            <img src="img/submarine.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id='about' class='bg-light-sea-green py-5'>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col text-center">
+                            <h3>About</h3>
+                            <div class='bar-star'>
+                                <hr><i class="fa fa-star"></i><hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center my-4 w-80 mx-auto">
+                        <div class="col col-md-6 mx-auto">
+                            <p>
+                                Freelancer is a free bootstrap theme created by Start Bootstrap.
+                                The download includes the complete source files including HTML, CSS,
+                                and JavaScript as well as optional LESS stylesheets for easy customization.
+                            </p>
+                        </div>
+                            
+                        <div class="col col-md-6 pull-md-right mx-auto">
+                            <p>
+                                Wheter you're a student looking to showcase your work, a professional looking to attract clients,
+                                or a graphic artist looking to share your projects, this template is the perfect starting point!
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <button class='transparent rounded w-auto px-3'>
+                                <i class="fa fa-download"></i>
+                                <span>Download</span>
+                            </button>
+                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id='contact' class='py-4'>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col text-center">
+                            <h3>Contact me</h3>
+                            <div class='bar-star dark'>
+                                <hr><i class="fa fa-star"></i><hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+
+                            <div class="col-12 col-sm-8 col-md-6 mx-auto">
+                                
+                                <form action="/action_page.php" method='get'>
+                                    <div class="input-group bb-only input-group-lg">
+                                        <input type="text" name='nome' class="form-control ms_input_border" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-lg" placeholder="Name">
+                                    </div>
+                                    <div class="input-group bb-only input-group-lg">
+                                        <input type="text" name='nome' class="form-control ms_input_border" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-lg" placeholder="Email address">
+                                    </div>
+                                    <div class="input-group bb-only input-group-lg">
+                                        <input type="text" name='nome' class="form-control ms_input_border" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-lg" placeholder="Phone number">
+                                    </div>
+
+                                    <div class="input-group bb-only input-group-lg">
+                                        <textarea class='form-control ms-input-border' name='mess' placeholder='Message'></textarea>
+                                    </div>
+                                    <button type="submit" class='btn bg-light-sea-green mt-1'>Sign in</button>
+                                </form>
+                            </div>
+                        </form>
                     </div>
                     
-                </nav>
-            </header>
-
-
-            <section id="start" class='p-6'>
-
-                <div class="row flex-direction-column justify-content-center align-items-center">
-
-                        <img src="img/avatar.svg" alt="">
                 </div>
-                <div class="row"></div>
-            </section>
-
-            <section id='portfolio'>
-
-            </section>
-
-            <section id='cake'></section> 
-            <section id='circus'></section> 
-            <section id='videogame'></section> 
-            <section id=''></section> 
-            <section id='submarine'></section> 
-            <section id='about'></section> 
-            <section id='contact'></section>
-
+            </section> 
 
             <footer>
+                <div class="footer-top py-4">
 
-                <div class="footer-top"></div>
-                <div class="footer-bottom"></div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-3 text-center">
+                            <h4 class='text-uppercase'>Location</h4>
+                            <p>2215 John Daniel Drive Clark, MO 54243</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <h4 class='text-uppercase'>Around the web</h4>
+                            <div class="row social-links justify-content-evenly">
+                                    <a class="col-3 link-box circle">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="col-3 link-box circle">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                    <a class="col-3 link-box circle">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="col-3 link-box circle">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center">
+                            <h4 class='text-uppercase'>About freelancer</h4>
+                            <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start boostrap</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom p-4">
+
+                    <div class="row">
+                        <div class="col text-center">
+                            Copyright &copy; Your Website 2019
+                        </div>
+                    </div>
+                </div>
             </footer>
 
-        </div>
 
     </body>
 </html>
